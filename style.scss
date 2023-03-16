@@ -1,0 +1,98 @@
+@import 'https://fonts.googleapis.com/css?family=Josefin+Slab';
+body{
+	font-family: "Josefin Slab";
+	height: 100vh;
+	background-color: #222;
+}
+
+.section-project{
+	padding: 50px 0;
+	position: relative;
+	background-color: #222;
+}
+
+.section__title, .section__subtitle{
+	text-align: center;
+	color: white;
+	display: block;
+}
+.section__title{
+	font-size: 3em;
+	line-height: 1;
+	margin: 0 0 20px;
+	
+}
+.section__subtitle{
+	font-size: 1.2em;
+	line-height: 1.5;
+	opacity: .5;
+	
+	a{
+		color: inherit
+	}
+}
+
+
+// Project carousel outer wrapper
+.project-carousel{
+	position: relative;
+	padding: 50px 0;
+}
+
+// Project Strip 
+.project-strip{
+	margin: 150px 0 150px;
+	filter: blur(10px);
+	
+	.project{
+		cursor: pointer;
+	}
+	img{
+		max-width: 100%;
+		width: 100%;
+		height: auto;
+
+	}
+}
+
+// Project Details
+.project-screen{
+	width: 768px;
+	height: 451px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	
+	// Project Detail Carousel    
+	.project-detail{
+		position: absolute;
+		left: 0;
+		right: 0;
+		width: 578px;
+		height: 361px;
+		margin: 32px auto 0;
+		z-index: 1;
+		background-color: #333;
+	}
+	
+	// Macbook frame 	
+	.screen-frame{
+		content:" ";
+		width: 768px;
+		height: 451px;
+		position: absolute;
+		background-image: url("https://dl.dropboxusercontent.com/u/26808427/cdn/experiments/training/macbook-frame.png");
+		background-repeat: no-repeat;
+	}
+	
+	// Initial style to stack the slides 	
+	.project{
+		margin-right: -100%;
+		float: left;
+		cursor: move;
+	}
+	
+}
